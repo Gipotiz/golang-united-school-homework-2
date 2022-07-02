@@ -10,6 +10,12 @@ import "math"
 // CalcSquare(10.0, SidesSquare)
 // CalcSquare(10.0, SidesCircle)
 
+const (
+	SidesTriangle = 3
+	SidesSquare   = 4
+	SidesCircle   = 0
+)
+
 func CalcSquare(sideLen float64, sidesNum int32) float64 {
 	if sidesNum == 3 {
 		p := sideLen * 3 / 2
